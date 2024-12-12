@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <title>Jade's Portfolio</title>
+   <script>
+    function searchContent(event) {
+      if (event.key == "Enter") {
+        const query = document.getElementById("search-bar").value.toLowerCase();
+        const sections = document.querySelectorAll("section");
+        let found = false;
+
+        sections.forEach((section) => {
+          const text = section.textContent.toLowerCase();
+          if (text.includes(query)) {
+            section.scrollIntoView({ behavior: "smooth" });
+            found = true;
+          }
+        });
+
+        if (!found) {
+          alert("No matching content found.");
+        }
+      }
+    }
+
+    function handleSearchButtonClick() {
+      const query = document.getElementById("search-bar").value.toLowerCase();
+      const sections = document.querySelectorAll("section");
+      let found = false;
+
+      sections.forEach((section) => {
+        const text = section.textContent.toLowerCase();
+        if (text.includes(query)) {
+          section.scrollIntoView({ behavior: "smooth" });
+          found = true;
+        }
+      });
+
+      if (!found) {
+        alert("No matching content found.");
+      }
+    }
+  </script>
+
+  </head>
+  <body>
+    <header>
+      <a href="#home" class="logo">Jade</a>
+
+      <nav>
+        <a href="#home" class="active"> Home</a>
+        <a href="#about" >About Me</a>
+        <a href="#skills" >Skill and Expertise</a>
+        <a href="#projects" >Projects</a>
+        <a href="#contact" >Contact Information</a>
+        <input type="text" placeholder="Search">
+      </nav>
+    </header>
+    <section id="home" class="Home">
+     <div>
+      <img src="idpic.png" alt="jade style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
+     </div> 
+
+     <div>
+      <h1>Hello! It's <span>Jade.</span></h1>
+      <h2>Welcome to my Portfolio.</h2>
+     </div>
+    </section>
+
+    <section id="about" class="About Me">
+      <h2>About Me</h2>
+      <p>
+        Hi! I'm Jade Ann Cobales, currently a first year Computer Science student at 
+        Batangas State University The National Engineering University. 
+        I love diving into some of our Programming Course, Game Development and subjects related to Science  
+        and have enjoyed working on various projects that challenge and inspire me.
+      </p>
+      <p>
+        Outside of academics, you'll find me Playing games or doing some art works, 
+        which helps keep my creativity flowing. I'm passionate about learning, growth,
+        and connecting with others who share my enthusiasm for Game Development .
+      </p>
+    </section>
+
+    <section id="skills">
+      <h3>Skill and Expertise</h3>
+      <p>I'm currently building my skills in computer science.So here are some of the skill im working on at the moment: </p>
+      
+      <h4>Programming Languages:</h4>
+        <ul>
+        <li> <b>C++:</b> and as a beginner, I'm learning the basics of C++ and working on small
+           projects to apply what I've learned.</li>
+        </ul>
+      
+        <h4>Web Development:</h4>
+        <ul>
+        <li> <b>HTML/CSS:</b>I'm still learning how to create and style web pages.</li>
+        </ul>
+      
+        <h4>Soft Skills:</h4>
+        <p>While I'm still early in my journey, I've been working on developing several essential soft 
+          skills that are important in both academic and professional settings:</p>
+        <ul>
+        <li> <b>Problem-solving:</b> I enjoy tackling challenges and finding effective solutions, 
+          whether it's debugging code or figuring out a tricky concept.</li>
+        <li> <b>Time Management:</b>Balancing my studies, projects, and personal interests helps me stay organized and productive. </li>
+        <li> <b>Creativity:</b>laying games and doing art helps me think outside the box and come up with innovative solutions. </li>
+        <p>These skills are a work in progress, and I'm excited to keep developing them as I continue my journey in computer science.</p>
+    </section>
+    
+    <section id="projects" class="Projects">
+        <h2>Projects</h2>
+        <ol>
+          <b><li>Simple Reading List in C++:</li></b>
+            <p>This is my first project in C++, it is a simple program where you can input the list of the novels/manwha/manga that you are going to read or have read. It is helpful because you can tract down the status of what you are reading. Here's an image of the program: </p>
+            <img src="Screenshot 2024-12-13 012805.png" alt="C++ Reading list">
+            <h5>View the <a href="https://github.com/jade-1023/PORTFOLIO/blob/main/1stproject.cpp">Source Code</a> </h5>
+            <br>
+          <h3> Other Projects Soon. . .</h3>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Information</h2>
+      <address style="text-align: center;">
+       <p>For more information, you can contact me via:</p>
+        <p>Email:<b> jadeanncobales1023@gmail.com</b></p>
+        <p>OR</p>
+        <p><i class="fa fa-github" style="font-size:36px"></i><a href="https://github.com/jade-1023">GitHub</a></p>
+      </address>
+      </section>
+  </body>
+</html>
+   
+   
+ 

@@ -1,0 +1,119 @@
+/* General Styles */
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a1a; /* Deep black background */
+    color: #c7d3c2; /* Soft sage green text */
+}
+
+header {
+    background-color: #2f3e34; /* Dark sage green */
+    color: #c7d3c2;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header a.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #c7d3c2;
+    text-decoration: none;
+    padding: 5px 10px;
+    border: 2px solid #c7d3c2;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header a.logo:hover {
+    background-color: #c7d3c2;
+    color: #2f3e34;
+}
+
+header a {
+    color: #c7d3c2;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+header input[type="text"] {
+    padding: 5px;
+    border: none;
+    border-radius: 3px;
+    background-color: #4a5b50; /* Subtle sage green */
+    color: #c7d3c2;
+}
+
+/* Section Styles */
+section {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    background: #2a3b32; /* Dark greenish black */
+    color: #c7d3c2;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(199, 211, 194, 0.3);
+}
+
+section h2, section h3, section h4 {
+    color: #8fa392; /* Lighter sage green for headings */
+}
+
+section img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 2px solid #8fa392;
+}
+
+/* Specific Styling for Home Section */
+#home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#home img {
+    max-width: 150px;
+    height: auto;
+    border-radius: 50%;
+    border: 3px solid #8fa392;
+    margin-right: 20px;
+}
+
+#home div {
+    text-align: left;
+}
+
+/* Navigation Active Link */
+nav a.active {
+    font-weight: bold;
+    text-decoration: underline;
+    color: #8fa392;
+}
+
+/* Footer Address */
+address {
+    font-style: normal;
+    line-height: 1.4;
+    text-align: center;
+}
+
+address a {
+    color: #8fa392;
+    text-decoration: none;
+}
+
+address a:hover {
+    text-decoration: underline;
+}
