@@ -41,13 +41,6 @@ https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.c
 
 ---
 
-## Tips  
-
-- Make sure the images (idpic.png and Screenshot 2024-12-13 012805.png) are in the same directory as the HTML file, or update their paths accordingly.  
-- To view the C++ source code of my project, click on the provided link in the *Projects* section.  
-
----
-
 If you encounter any issues or have suggestions, feel free to contact me via the email or GitHub links provided in the *Contact Information* section.  
 
 Thanks for visiting my portfolio!  
